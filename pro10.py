@@ -1,4 +1,4 @@
-#determine whether the driver is insured or not
+# determine whether the driver is insured or not
 
 married = input("Is the driver married? (yes/no): ")
 gender = input("Enter gender (male/female): ")
