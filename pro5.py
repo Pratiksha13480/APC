@@ -1,4 +1,4 @@
-#evaluate student performance
+# evaluate student performance
 
 per = float(input("Enter percentage: "))
 
@@ -12,3 +12,4 @@ elif per >= 60:
     print("Average performance")
 else:
     print("Poor performance")
+

@@ -1,8 +1,8 @@
 #check whether a character is a vowel or consonant
 
-ch = input("Enter a character: ")
+ch = input("Enter character: ")
 
 if ch in ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):
-    print("Vowel")
+    print("character is vowel")
 else:
-    print("Consonant")
+    print("character is constant")
