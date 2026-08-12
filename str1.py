@@ -70,7 +70,7 @@ print("Uppercase:", upper)
 print("Lowercase:", lower)
 
 
-# 6.eplace all occurrences of a given character with another character
+# 6.replace all occurrences of a given character with another character
 
 s = input("Enter a string: ")
 old = input("Character to replace: ")
