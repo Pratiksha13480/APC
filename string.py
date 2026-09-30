@@ -68,7 +68,7 @@ print("Uppercase:", upper)
 print("Lowercase:", lower)
 
 #6.Replace all occurrences of a given character with another character. 
- s = input("Enter a string: ")
+s = input("Enter a string: ")
 old = input("Enter character to replace: ")
 new = input("Enter new character: ")
 
@@ -141,15 +141,14 @@ print("Longest word:", longest)
 #13.Find the shortest word in a sentence. 
 s = input("Enter a sentence: ")
 words = s.split()
+#if words:
+shortest = words[0]
 
-if words:
-    shortest = words[0]
+for word in words:
+    if len(word) < len(shortest):
+        shortest = word
 
-    for word in words:
-        if len(word) < len(shortest):
-            shortest = word
-
-    print("Shortest word:", shortest)
+print("Shortest word:", shortest)
 
 #14.Convert the first letter of every word to uppercase. 
 s = input("Enter a sentence: ")
@@ -159,14 +158,14 @@ result = ""
 for word in words:
     result += word[0].upper() + word[1:] + " "
 
-print("Title Case:", result.strip())
+print("Title Case:", result.strip())   #not use strip()
 
 #15.Print all duplicate characters in a string. 
 s = input("Enter a string: ")
 duplicates = ""
 
 for ch in s:
-    if s.count(ch) > 1 and ch not in duplicates:
+    if s.count(ch) > 1:
         duplicates += ch
 
 print("Duplicate characters:", duplicates)
